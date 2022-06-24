@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: whitesmoke;
+}
+
+footer {
+    background: url("../img/polygons.jpg") center center;
+    opacity: 0.7;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+h2 a {
+    text-decoration: none;
+    color: unset;
+}
+
+h2 a:hover{
+    color: black;
+}
+
+h1 {
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 21px;
+    margin-top: 5px;
+    ;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 13px;
+}
+
+.page-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 30px;
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    color: yellow;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.side-nav {
+    align-self: flex-start;
+    margin-right: calc(30px + 1vmin);
+    position: sticky;
+    top: 20%;
+    border: 1px solid rgba(51, 51, 51, 0.25);
+    border-radius: 8px;
+}
+
+#side_nav {
+    display: none;
+}
+
+.side-nav a {
+    display: block;
+    position: relative;
+    color: #8d8d8d;
+    text-decoration: none;
+    font-size: 20px;
+    padding: calc(10px + 1vmin) calc(30px + 1vmin);
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.side-nav a:nth-child(1) {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.side-nav a:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+.image {
+    display: flex;
+    justify-content: space-around;
+}
+
+#top {
+    min-height: 500px;
+}
+
+#about {
+    background-color: #B7A7FB;
+}
+
+#top,
+#skills,
+#contact {
+    background-color: #d3acfd;
+}
+
+#realisations {
+    background-color: #B7A7FB;
+    background-image: url("../img/expectrum.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#to_top {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    box-shadow: 35px 35px 68px 0px rgba(211, 172, 253, 0.5), inset -8px -8px 16px 0px rgba(211, 172, 253, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 50px;
+    height: 30px;
+    font-size: 25px;
+    color: blueviolet;
+    display: none;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/*jusque 768px > md*/
+@media(max-width:768px) {
+    .side-nav {
+        display: none;
+    }
+}
+
+/*lg*/
+@media(min-width:992px) {
+
+    #top {
+        background: url("../img/polygons.jpg") center center;
+        opacity: 0.6;
+        background-size: cover;
+        min-height: 700px;
+
+    }
+
+    h1 {
+        font-size: 55px;
+        margin-top: 20px;
+        margin-bottom: 400px;
+    }
+
+    h2 {
+        font-size: 45px;
+        ;
+    }
+
+    h3 {
+        font-size: 34px;
+    }
+
+    h4 {
+        font-size: 21px;
+    }
+
+    h2 a:hover{
+        color: yellow;
+    }
+}
