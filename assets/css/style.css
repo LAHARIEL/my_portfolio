@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -10,48 +9,57 @@ body {
     background-color: whitesmoke;
 }
 
-footer {
-    background: url("../img/polygons.jpg") center center;
-    opacity: 0.7;
-    color: whitesmoke;
-    font-weight: bold;
+
+h1 {
+    color: blueviolet;
+    text-align: center;
+    margin-top: 20px;
 }
 
-h1,
+h1+div {
+    /*1ère div après le h1*/
+    color: blueviolet;
+    text-align: center;
+    font-size: 45px;
+}
+
+#about i{
+    font-size: xx-large;
+    color: blueviolet;
+}
+
+#CV a {
+    text-decoration: none;
+    color: black;
+    border: solid 1px #8d8d8d;
+    transition-duration: 1s;
+}
+
+#CV a:hover {
+    background-color: #9198e5;
+    color: white;
+}
+
 h2 {
-    color: whitesmoke;
+    background: url("../img/polygons.jpg") center center;
+    opacity: 0.6;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 1px 2px #333;
     text-align: center;
 }
 
-h2 a {
-    text-decoration: none;
-    color: unset;
-}
-
-h2 a:hover{
-    color: black;
-}
-
-h1 {
-    font-size: 45px;
-    margin-top: 20px;
-    margin-bottom: 100px;
-}
-
-
-h2 {
-    font-size: 34px;
-}
-
 h3 {
-    font-size: 21px;
+    color: blueviolet;
     margin-top: 5px;
-    ;
     margin-bottom: 5px;
+    font-weight: bold;
+    transition-duration: 1s;
 }
 
-h4 {
-    font-size: 13px;
+h6 {
+    color: blueviolet;
+    background-color: bisque;
 }
 
 .page-container {
@@ -61,11 +69,64 @@ h4 {
     padding: 0 30px;
 }
 
-.navbar-brand {
+#contact a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+#contact a:hover {
+    color: blueviolet;
+}
+
+
+footer,
+.bg-navbar {
+    background: linear-gradient(#e66465, #9198e5);
+    box-shadow: 15px 15px 20px 0px rgba(180, 154, 218, 0.5);
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: black;
+}
+
+
+a.navbar-brand {
     font-family: 'Dancing Script', cursive;
-    color: yellow;
+    color: whitesmoke;
     font-size: 40px;
-    text-shadow: 1px 1px 2px #333;
+    text-shadow: 2px 1px 2px #333;
+    transition-duration: 1.5s;
+}
+
+a.navbar-brand:hover {
+    color: rgb(247, 247, 130);
+    font-size: 45px;
+}
+
+.nav-link-custom {
+    text-decoration: none;
+    padding: 10px;
+    vertical-align: middle;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+a.nav-link-custom:hover {
+    transition-duration: 2s;
+    color: black;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    box-shadow: 35px 35px 68px 0px rgba(247, 247, 130, 0.5), inset -7px -7px 16px 0px rgba(247, 247, 130, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
 .side-nav {
@@ -73,12 +134,16 @@ h4 {
     margin-right: calc(30px + 1vmin);
     position: sticky;
     top: 20%;
-    border: 1px solid rgba(51, 51, 51, 0.25);
-    border-radius: 8px;
 }
 
 #side_nav {
     display: none;
+    position: sticky;
+    border: 1px solid rgba(51, 51, 51, 0.25);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    box-shadow: 35px 35px 68px 0px rgba(183, 167, 251, 0.5), inset -8px -8px 16px 0px rgba(183, 167, 251, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
 .side-nav a {
@@ -90,6 +155,11 @@ h4 {
     padding: calc(10px + 1vmin) calc(30px + 1vmin);
     font-weight: 500;
     overflow: hidden;
+    transition-duration: 1s;
+}
+
+.side-nav a:hover {
+    color: black;
 }
 
 .side-nav a:nth-child(1) {
@@ -108,22 +178,26 @@ h4 {
     justify-content: space-around;
 }
 
+.glassmorph {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    box-shadow: 35px 35px 68px 0px rgba(183, 167, 251, 0.5), inset -8px -8px 16px 0px rgba(183, 167, 251, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+
+}
+
 #top {
     min-height: 500px;
 }
 
-#about {
-    background-color: #B7A7FB;
-}
 
 #top,
 #skills,
 #contact {
-    background-color: #d3acfd;
+    background-color: whitesmoke;
 }
 
 #realisations {
-    background-color: #B7A7FB;
     background-image: url("../img/expectrum.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -131,50 +205,90 @@ h4 {
 }
 
 #to_top {
+    border: 1px solid rgba(51, 51, 51, 0.25);
     backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 5px;
-    box-shadow: 35px 35px 68px 0px rgba(211, 172, 253, 0.5), inset -8px -8px 16px 0px rgba(211, 172, 253, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 35px 35px 68px 0px rgba(183, 167, 251, 0.5), inset -8px -8px 16px 0px rgba(183, 167, 251, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
     position: fixed;
     bottom: 40px;
     right: 20px;
     width: 50px;
     height: 30px;
     font-size: 25px;
-    color: blueviolet;
+    color: #8d8d8d;
     display: none;
     text-align: center;
     justify-content: center;
 }
-
 
 /*jusque 768px > md*/
 @media(max-width:768px) {
     .side-nav {
         display: none;
     }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+}
+
+/*md*/
+@media(min-width:769px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    h5 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 18px;
+    }
 }
 
 /*lg*/
 @media(min-width:992px) {
 
-    #top {
-        background: url("../img/polygons.jpg") center center;
-        opacity: 0.6;
-        background-size: cover;
-        min-height: 700px;
-
-    }
-
     h1 {
         font-size: 55px;
-        margin-top: 20px;
-        margin-bottom: 400px;
     }
 
     h2 {
         font-size: 45px;
-        ;
     }
 
     h3 {
@@ -182,10 +296,11 @@ h4 {
     }
 
     h4 {
-        font-size: 21px;
+        font-size: 28px;
     }
 
-    h2 a:hover{
-        color: yellow;
+    h5 {
+        font-size: 24px;
     }
+
 }

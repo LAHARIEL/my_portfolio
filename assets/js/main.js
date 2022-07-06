@@ -17,10 +17,12 @@ window.addEventListener('scroll', function () {
 let title = document.getElementsByTagName('h3');
 for (let i = 0; i < title.length; i++) {
     title[i].addEventListener('mouseover', function () {
-        this.style.fontWeight = 'bold';
+        this.style.backgroundColor = 'lightgrey';
+        this.style.fontStyle = 'italic';
 
         this.addEventListener('mouseout', function () {
-            this.style.fontWeight = 'unset';
+            this.style.backgroundColor = 'unset';
+            this.style.fontStyle = 'unset';
         });
     });
 };

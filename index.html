@@ -26,7 +26,7 @@
 <body>
     <main class="page-container">
         <div class="side-nav">
-            <nav id="side_nav">
+            <nav id="side_nav" class="animate__animated animate__fadeIn animate__slower">
                 <a href=#top><i class="fa-solid fa-house" title="Accueil"></i></a>
                 <a href=#about><i class="fa-solid fa-clipboard-question" title="A propos"></i></a>
                 <a href=#skills><i class="fa-solid fa-award" title="Mes compétences"></i></a>
@@ -39,7 +39,7 @@
         <div>
             <section id="top">
                 <header>
-                    <nav class="navbar navbar-expand-lg bg-light">
+                    <nav class="navbar navbar-expand-lg bg-navbar">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#">Lauri L Dev'</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -50,19 +50,19 @@
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#top">Acceuil</a>
+                                        <a class="nav-link-custom active" aria-current="page" href="#top">Accueil</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#about">A propos</a>
+                                        <a class="nav-link-custom" href="#about">A propos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#skills">Mes compétences</a>
+                                        <a class="nav-link-custom" href="#skills">Mes compétences</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#realisations">Mes réalisations</a>
+                                        <a class="nav-link-custom" href="#realisations">Mes réalisations</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#contact">Me contacter</a>
+                                        <a class="nav-link-custom" href="#contact">Me contacter</a>
                                     </li>
                                 </ul>
                             </div>
@@ -70,11 +70,14 @@
                     </nav>
                 </header>
 
-                <h1 class="animate__animated animate__slideInLeft">Ceci est le site portfolio de Lauriane LAHARIE</h1>
-                <h2 class="animate__animated animate__backInLeft">Développeuse web et web mobile <br><a href="assets/img/CV-Laharie-L.pdf" download target="_blank">Télécharger mon CV papier <i
-                            class="fa-solid fa-scroll"></i></a></h2>
+                <h1 class="animate__animated animate__slideInLeft">Lauriane LAHARIE</h1>
+                <div class="animate__animated animate__backInLeft">Développeuse web et web mobile</div>
+                <div class="container" id="CV"> <a href="assets/img/CV-Laharie-L.pdf" download target="_blank"
+                        class="btn animate__animated animate__backInLeft col-3 offset-2 col-lg-3 offset-lg-2 my-2">Télécharger
+                        mon CV papier <i class="fa-solid fa-scroll"></i></a><img src="assets/img/robot-IA.jpg"
+                        alt="IA robot femme" class=" col-sm-12 col-lg-6 px-5" data-aos="zoom-in" data-aos-offset="200"
+                        data-aos-easing="linear" data-aos-duration="1200"></div>
 
-                    
 
             </section>
 
@@ -83,7 +86,9 @@
             <section id="about">
                 <div class="px-2">
                     <h2>A propos de Lauriane</h2>
-                    <p>Envie d'en savoir un peu plus sur moi ? Je vous parle de mon parcours. </p>
+                    <p class="text-center"><i class="bi bi-chat-right-heart"></i> Envie d'en savoir un peu plus sur moi
+                        ? <i class="bi bi-balloon-heart-fill"></i>Je vous parle de mon parcours. <i
+                            class="bi bi-box-arrow-down"></i></p>
 
                     <h3 class="text-center">Ma formation</h3>
                     <p>Je suis actuellement une formation avec l'AFPA pour obtenir le <strong class="text-primary">titre
@@ -103,37 +108,41 @@
                         pour finir en beauté.
                     </p>
                     <div class="image row my-2">
-                        <img src="assets/img/robot-IA.jpg" alt="IA robot femme" class="w-50 col-sm-11 col-lg-5"
+                        <img src="assets/img/developer-cartoon.png" alt="IA robot femme" class="w-50 col-sm-12 col-lg-6"
                             data-aos="zoom-in" data-aos-offset="200" data-aos-easing="linear" data-aos-duration="1200">
-                        <img src="assets/img/smartphone.jpg" alt="lego" class="w-50 col-sm-11 col-lg-5"
+                        <img src="assets/img/smartphone.jpg" alt="lego" class="w-50 col-sm-12 col-lg-6"
                             data-aos="zoom-in" data-aos-offset="300" data-aos-easing="linear" data-aos-duration="1200">
                     </div>
 
                     <h3 class="text-center">Mon parcours</h3>
                     <p>Je considère que chaque étape de ma vie a contribué à la personne que je
                         suis aujourd'hui. Je suis consituée de plusieurs couches de compétences et de
-                        connaissances savemment liées avec une sauce au caramel.<br> Je suis... je suis...
+                        connaissances savamment liées avec une sauce au caramel.<br> Je suis... je suis...
                         (buzz) Je suis une pile de crêpes !</p>
                     <div class="image row my-2">
-                        <img src="assets/img/pancakes.jpg" alt="pancakes" class="w-25">
+                        <img src="assets/img/pancakes.jpg" alt="pancakes" class="w-50">
                     </div>
-                    <p class="text-primary">2022 : Lauriane2.0</p>
-                    <p> Actuellement en formation de <strong>Développeuse Web et Web mobile</strong>, j'apprends
+                    <p class="text-secondary bg-info bg-opacity-10 my-2 d-inline fw-bold">2022 : Lauriane2.0</p>
+                    <p class="py-2"> Actuellement en formation de <strong>Développeuse Web et Web mobile</strong>,
+                        j'apprends
                         les
                         bases du nouveau métier que j'exercerai demain. <br>
                         Pourquoi ce choix de reconversion ? Parce qu'en travaillant étroitement avec les
-                        services informatiques de ma précente
+                        services informatiques de ma précédente
                         entreprise, j'ai découvert un réel intéret pour le travail de mes collègues. Par
                         ailleurs je constate partout le
                         besoin d'automatiser et gagner en efficacité. J'aime "faire" et "comprendre" pour
                         mériter les crédits qui peuvent m'être attribués. Alors c'est parti pour une nouvelle
                         aventure vers le monde de l'informatique et le digital. </p>
-                    <p>Etape 1 : apprentissage des bases, langages de développement de sites web et
+                    <p class="py-2">Etape 1 : apprentissage des bases, langages de développement de sites web et
                         applications. <br> Etape 2 : .. d'abord finissons l'étape 1 ! Mais le vaste monde des
                         applications, logiciels et ERP m'intéresse grandement.
                     </p>
-                    <p class="text-primary">2006-2021 : le monde merveilleux des chiffres</p>
-                    <p>Avant ma formation actuelle, j'ai passé <strong>plus de 10 ans dans les métiers de la
+                    <p class="text-secondary bg-info bg-opacity-10 my-2 d-inline fw-bold">2006-2021 : le monde
+                        merveilleux des
+                        chiffres</p>
+                    <p class="py-2">Avant ma formation actuelle, j'ai passé <strong>plus de 10 ans dans les métiers de
+                            la
                             finance</strong>,
                         où j'ai toujours évolué. En alternance dans l'entreprise qui m'a ensuite gardée, j'ai obtenu le
                         BTS
@@ -146,8 +155,9 @@
                         d'équipe. J'aime à penser que mon passage a contribué à l'amélioration générale, et à la bonne
                         ambiance.
                     </p>
-                    <p class="text-primary">Jusqu'en 2005</p>
-                    <p>Dans ma première jeunesse, sur les bancs de la fac, j'ai étudié l'enseignement du sport, j'ai
+                    <p class="text-secondary bg-info bg-opacity-10 my-2 d-inline fw-bold">Jusqu'en 2005</p>
+                    <p class="py-2">Dans ma première jeunesse, sur les bancs de la fac, j'ai étudié l'enseignement du
+                        sport, j'ai
                         coaché
                         des
                         équipes de jeunes volleyeuses et j'ai voyagé. Malgré l'obtention des diplômes académiques
@@ -177,50 +187,52 @@
                     <h2>Mes compétences</h2>
                     <h3>Compétences techniques</h3>
                     <div class="d-flex row justify-content-around">
-                        <div class="col-sm-11 col-lg-5 mb-2" data-aos="fade-right">
+                        <div class="col-sm-11 col-lg-5 mb-2 glassmorph" data-aos="fade-right" data-aos-duration="1500"
+                            data-aos-easing="linear">
                             <h4 class="text-center py-2">Front-end</h4>
 
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML</div>
-                                </div>
-                                <div class="progress mt-1">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"
-                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">CSS</div>
-                                </div>
-                                <div class="progress mt-1">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
-                                </div>
-                                <div class="progress mt-1">
-                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
-                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
-                                </div>
-                                <div class="progress mt-1">
-                                    <div class="progress-bar text-bg-light text-start" role="progressbar"
-                                        style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                        REACT
-                                        : à venir !</div>
-                                </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                            </div>
+                            <div class="progress mt-1">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                            </div>
+                            <div class="progress mt-1">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+                            </div>
+                            <div class="progress mt-1">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                            </div>
+                            <div class="progress mt-1">
+                                <div class="progress-bar text-bg-light text-start" role="progressbar"
+                                    style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    REACT
+                                    : à venir !</div>
+                            </div>
                         </div>
 
-                        <div class="col-sm-11 col-lg-5 mb-2" data-aos="fade-left" data-aos-delay="300">
+                        <div class="col-sm-11 col-lg-5 mb-2 glassmorph" data-aos="fade-left" data-aos-duration="1500"
+                            data-aos-easing="linear" data-aos-delay="300">
                             <h4 class="text-center py-2">Back-end (en cours d'apprentissage)</h4>
-                                <div class="progress">
-                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%"
-                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">SQL</div>
-                                </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">SQL</div>
+                            </div>
 
-                                <div class="progress mt-1">
-                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 25%"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHP</div>
-                                </div>
+                            <div class="progress mt-1">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHP</div>
+                            </div>
 
-                                <div class="progress mt-1 ">
-                                    <div class="progress-bar text-bg-light text-start" role="progressbar"
-                                        style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                        SYMFONY : à venir !</div>
-                                </div>
+                            <div class="progress mt-1 ">
+                                <div class="progress-bar text-bg-light text-start" role="progressbar"
+                                    style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    SYMFONY : à venir !</div>
+                            </div>
                         </div>
                         <div class="text-center">
                             <h4 class="py-2">Outils et logiciels</h4>
@@ -231,12 +243,15 @@
                             <hr class="w-25 mx-auto">
                             Pack Office<br>
                             SAP (FI/CO/MM)<br>
-                        </div>
-                    </div>
-                    <h3>Qualités personnelles</h3>
 
-                    <div class="d-flex row justify-content-around">
-                        <div class="d-flex col-sm-12 col-lg-5 my-2">
+                        </div>
+
+                        <h3>Qualités personnelles</h3>
+
+                        <div class="d-flex row justify-content-around">
+                            <img src="assets/img/team-work.jpg" alt="team work" class="w-50">
+                        </div>
+                        <div class="d-flex col-sm-12 col-lg-5 my-2 glassmorph">
                             <h4 class="pt-5">Savoir-faire</h4>
                             <ul class="mx-4">
                                 <li>Documenter des procédures</li>
@@ -251,7 +266,7 @@
                                 <li>Motiver</li>
                             </ul>
                         </div>
-                        <div class="d-flex col-sm-12 col-lg-5 my-2">
+                        <div class="d-flex col-sm-12 col-lg-5 my-2 glassmorph">
                             <h4 class="pt-5">Savoir-être</h4>
                             <ul class="mx-4">
                                 <li>Rigueur</li>
@@ -266,6 +281,8 @@
                         <p class="my-2">Je parle, je chante, j'écris, je comprends (écrit et oral)
                             l'<strong>anglais</strong> (Niveau
                             C1).</p>
+
+
                     </div>
                 </div>
             </section>
@@ -273,81 +290,30 @@
             <section id="realisations">
                 <div class="px-2">
                     <h2>Mes réalisations</h2>
-                    <p>Je travaille en local sur des projets qui me permettent d'apprendre en faisant. Mais je vous
+                    <p class="mb-3">Je travaille en local sur des projets qui me permettent d'apprendre en faisant. Mais
+                        je vous
                         partage
                         (Merci Github!) les étapes de mon apprentissage. <br> Et quand bien même je ne peux pas tout
                         partagé
                         car je suis limitée techniquement, je vous parle ici de ce que je fais et des derniers langages
                         appris.</p>
+                    <h4 class="bg-info text-dark bg-opacity-10 text-center"><i class="bi bi-hourglass-split"></i>
+                        Projets en cours</h4>
+                    <p class="mb-3">J'apprends en ce moment des langages back-end, et je pourrais bientot être en mesure
+                        de partager un projet de boutique e-commerce en PHP / MySQL.</p>
+
+                    <h4 class="bg-info text-dark bg-opacity-10 text-center"><i class="bi bi-check2-square"></i> Projets
+                        finalisés</h4>
                     <div class="row justify-content-around">
-                        <div class="card mx-2 my-3" style="width: 18rem;" data-aos="fade-down" data-aos-offset="300"
-                            data-aos-easing="linear" data-aos-duration="1200">
-                            <img src="assets/img/fiasco.jpg" class="card-img-top" alt="restaurant">
-                            <div class="card-body">
-                                <h5 class="card-title">Integration : Le Fiasco</h5>
-                                <p class="card-text">HTML / CSS<br>
-                                    Cette intégration entre dans le cadre des travaux pratiques effectués au cours de ma
-                                    formation.</p>
-                                <a href="https://github.com/LAHARIEL/fiasco/tree/master" target="_blank"
-                                    class="btn btn-outline-primary">Voir le
-                                    code</a>
-                            </div>
-                        </div>
-                        <div class="card mx-2 my-3" style="width: 18rem;" data-aos="fade-down" data-aos-offset="300"
-                            data-aos-easing="linear" data-aos-duration="1200">
-                            <img src="assets/img/business.jpg" class="card-img-top" alt="business">
-                            <div class="card-body">
-                                <h5 class="card-title">Integration : Ma super compagnie !</h5>
-                                <p class="card-text">HTML / CSS<br>
-                                    Cette intégration entre dans le cadre des travaux pratiques effectués au cours de ma
-                                    formation.</p>
-                                <a href="https://github.com/LAHARIEL/super_compagnie/tree/master" target="_blank"
-                                    class="btn btn-outline-primary">Voir le
-                                    code</a>
-                            </div>
-                        </div>
-                        <div class="card mx-2 my-3" style="width: 18rem;" data-aos="fade-down" data-aos-offset="300"
-                            data-aos-easing="linear" data-aos-duration="1200">
-                            <img src="assets/img/social-media.jpg" class="card-img-top" alt="business">
-                            <div class="card-body">
-                                <h5 class="card-title">Integration : Site portfolio</h5>
-                                <p class="card-text">HTML / CSS / Bootstrap<br>
-                                    Ce travail sur un site CV portfolio a été effectué principalement avec
-                                    Bootstrap.<br>
-                                    Cette intégration entre dans le cadre des travaux pratiques effectués au cours de ma
-                                    formation.</p>
-                                <a href="https://github.com/LAHARIEL/portfolio_bootstrap/tree/master" target="_blank"
-                                    class="btn btn-outline-primary">Voir le
-                                    code</a>
-                            </div>
-                        </div>
-                        <div class="card mx-2 my-3" style="width: 18rem;" data-aos="fade-down" data-aos-offset="300"
-                            data-aos-easing="linear" data-aos-duration="1200">
-                            <img src="assets/img/WordPress-logo.png" class="card-img-top" alt="logo wordpress">
-                            <div class="card-body overflow-auto" style="height: 200px;">
-                                <h5 class="card-title">Wordpress : Site d'association sportive</h5>
-                                <p class="card-text">Wordpress / CSS<br>
-                                    Ce site a été fait avec un thème enfant ajusté (feuille style CSS) et des pluggin de
-                                    gestion d'espace membres, formulaire de contact, référencement, newsletter, gallerie
-                                    photos.
-                                    Cet site entre dans le cadre des travaux pratiques effectués au cours de ma
-                                    formation.</p>
-                                <p>Le site a été travaillé en serveur local (XAMP).</p>
-                                <!-- <a href="" target="_blank" class="btn btn-outline-primary">Voir le
-                                code</a> -->
-                            </div>
-                        </div>
                         <div class="card mx-2 my-3" style="width: 18rem;" data-aos="fade-down" data-aos-offset="300"
                             data-aos-easing="linear" data-aos-duration="1200">
                             <img src="assets/img/JavaScript-logo.png" class="card-img-top" alt="logo javascript">
                             <div class="card-body">
-                                <h5 class="card-title">Les modals en JS</h5>
-                                <p class="card-text">HTML / CSS / JavaScript<br>
-                                    Ce travail sur les modals popup au scroll et à la fermeture de page a été effectué
-                                    en
-                                    autonomie à l'aide de tutoriels.<br>L'objectif est de me créer une référence de bout
-                                    de
-                                    codes à réintégrer dans mes futurs projets</p>
+                                <h5 class="card-title fw-bold">Les modals en JS</h5>
+                                <h6>HTML / CSS / JavaScript</h6>
+                                <p class="card-text">Ce travail sur les modals popup au scroll et à la fermeture de page a été effectué
+                                en autonomie à l'aide de tutoriels.<br>L'objectif est de me créer une référence de bout
+                                de codes à réintégrer dans mes futurs projets</p>
                                 <a href="https://github.com/LAHARIEL/modal/tree/master" target="_blank"
                                     class="btn btn-outline-primary">Voir le
                                     code</a>
@@ -357,17 +323,81 @@
                             data-aos-easing="linear" data-aos-duration="1200">
                             <img src="assets/img/JavaScript-logo.png" class="card-img-top" alt="logo Javascript">
                             <div class="card-body">
-                                <h5 class="card-title">Indicateur de position sur navigation latérale</h5>
-                                <p class="card-text">HTML / CSS / JavaScript<br>
-                                    Ce travail sur le visuel au scroll sur le menu latéral du postitionnement du lecteur
-                                    a
-                                    été effectué en autonomie à l'aide de tutoriels.<br>L'objectif est de me créer une
-                                    référence de bout de codes à réintégrer dans mes futurs projets</p>
+                                <h5 class="card-title fw-bold">Indicateur de position sur navigation latérale</h5>
+                                <h6>HTML / CSS / JavaScript</h6>
+                                <p class="card-text">
+                                Ce travail sur le visuel au scroll sur le menu latéral du postitionnement du lecteur
+                                a été effectué en autonomie à l'aide de tutoriels.<br>L'objectif est de me créer une
+                                référence de bout de codes à réintégrer dans mes futurs projets</p>
                                 <a href="https://github.com/LAHARIEL/SideNav_Scrollspy/tree/master" target="_blank"
                                     class="btn btn-outline-primary">Voir le
                                     code</a>
                             </div>
                         </div>
+                        <div class="card mx-2 my-3" style="width: 18rem;" data-aos="fade-down" data-aos-offset="300"
+                            data-aos-easing="linear" data-aos-duration="1200">
+                            <img src="assets/img/WordPress-logo.png" class="card-img-top" alt="logo wordpress">
+                            <div class="card-body overflow-auto" style="height: 200px;">
+                                <h5 class="card-title fw-bold">Wordpress : Site d'association sportive</h5>
+                                <h6>Wordpress / CSS</h6>
+                                <p class="card-text">                               
+                                Ce site a été fait avec un thème enfant ajusté (feuille style CSS) et des pluggin de
+                                gestion d'espace membres, formulaire de contact, référencement, newsletter, gallerie
+                                photos.
+                                Cet site entre dans le cadre des travaux pratiques effectués au cours de ma
+                                formation.</p>
+                                <p>Le site a été travaillé en serveur local (XAMP).</p>
+                                <!-- <a href="" target="_blank" class="btn btn-outline-primary">Voir le
+                                code</a> -->
+                            </div>
+                        </div>
+                        <div class="card mx-2 my-3" style="width: 18rem;" data-aos="fade-down" data-aos-offset="300"
+                            data-aos-easing="linear" data-aos-duration="1200">
+                            <img src="assets/img/social-media.jpg" class="card-img-top" alt="business">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Integration : Site portfolio</h5>
+                                <h6>HTML / CSS / Bootstrap</h6>
+                                <p class="card-text">
+                                Ce travail sur un site CV portfolio a été effectué principalement avec
+                                Bootstrap.<br>
+                                Cette intégration entre dans le cadre des travaux pratiques effectués au cours de ma
+                                formation.</p>
+                                <a href="https://github.com/LAHARIEL/portfolio_bootstrap/tree/master" target="_blank"
+                                    class="btn btn-outline-primary">Voir le
+                                    code</a>
+                            </div>
+                        </div>
+                        <div class="card mx-2 my-3" style="width: 18rem;" data-aos="fade-down" data-aos-offset="300"
+                            data-aos-easing="linear" data-aos-duration="1200">
+                            <img src="assets/img/fiasco.jpg" class="card-img-top" alt="restaurant">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Integration : Le Fiasco</h5>
+                                <h6>HTML / CSS</h6>
+                                <p class="card-text">
+                                Cette intégration entre dans le cadre des travaux pratiques effectués au cours
+                                de ma
+                                formation.</p>
+
+                                <a href="https://github.com/LAHARIEL/fiasco/tree/master" target="_blank"
+                                    class="btn btn-outline-primary ">Voir le
+                                    code</a>
+                            </div>
+                        </div>
+                        <div class="card mx-2 my-3" style="width: 18rem;" data-aos="fade-down" data-aos-offset="300"
+                            data-aos-easing="linear" data-aos-duration="1200">
+                            <img src="assets/img/business.jpg" class="card-img-top" alt="business">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Integration : Ma super compagnie !</h5> <h6>HTML / CSS</h6>
+                                <p class="card-text"> Cette intégration entre dans le cadre des travaux pratiques effectués au cours de ma
+                                formation.</p>
+                                <a href="https://github.com/LAHARIEL/super_compagnie/tree/master" target="_blank"
+                                    class="btn btn-outline-primary">Voir le
+                                    code</a>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </section>
@@ -376,35 +406,48 @@
                 <div class="px-2">
                     <h2>Me contacter</h2>
                     <div class="d-flex row py-2">
-                        <div class="col-sm-11 col-lg-5 ms-auto">
-                            <p>
-                                <i class="bi bi-linkedin"></i> Cliquer <a
-                                    href="https://www.linkedin.com/in/laurianelaharie" target="_blank">ici</a> pour me
-                                trouver sur LinkedIn.
-                            </p>
-                            <p>
+
+                        <div class="col-sm-12 col-lg-4 ms-auto"><i class="bi bi-linkedin p-2"></i>Lauriane
+                            LAHARIE
+                            <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium"
+                                data-theme="light" data-type="VERTICAL" data-vanity="laurianelaharie" data-version="v1">
+                                <a class="badge-base__link LI-simple-link"
+                                    href="https://fr.linkedin.com/in/laurianelaharie?trk=profile-badge"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4 ms-auto">
+                            <div> <i class="bi bi-github"></i> Cliquer <a href="https://github.com/LAHARIEL">ici</a>
+                                pour voir mon espace GitHub.
+                            </div>
+
+                            <div>
                                 <i class="bi bi-envelope"></i> Cliquer <a
-                                    href="mailto:laurianelaharie@gmail.com">ici</a> pour
-                                m'envoyer un courriel.
-                            </p>
-                            <p>
+                                    href="mailto:laurianelaharie@gmail.com">ici</a>
+                                pour m'envoyer un courriel.
+                            </div>
+                            <div>
                                 <i class="bi bi-telephone"></i> N'hésitez pas à m'appeler, il suffit de cliquer<a
                                     href="tel:0680557992"> ici</a> !
-                            </p>
+                            </div>
                         </div>
-                        <div class="col-sm-11 col-lg-5 ms-auto">
-                            <a href="assets/img/CV-Laharie-L.pdf" download target="_blank">Télécharger mon CV papier <i
-                                    class="fa-solid fa-scroll"></i></a>
+                        <div class="col-sm-12 col-lg-4 ms-auto">
+                            <a href="assets/img/CV-Laharie-L.pdf" download target="_blank"
+                                class="btn btn-warning">Télécharger mon CV papier <i class="fa-solid fa-scroll"></i></a>
                         </div>
                     </div>
                 </div>
+
             </section>
-            <footer class="container row mx-auto text-center">
-                <p><i class="bi bi-linkedin"></i>
-                    <i class="bi bi-envelope"></i>
-                    <i class="bi bi-telephone"></i>
+            <footer class="container row ms-auto text-center">
+                <p><a href="https://github.com/LAHARIEL"><i class="bi bi-github"></i></a>
+                    <a href="tel:0680557992"><i class="bi bi-envelope p-2"></i></a>
+                    <a href="https://www.linkedin.com/in/laurianelaharie" target="_blank"><i
+                            class="bi bi-linkedin p-2"></i></a>
+                    <a href="mailto:laurianelaharie@gmail.com"><i class="bi bi-telephone p-2"></i></a>
+
                 </p>
-                <p>2022 - Tous droits réservés</p>
+                <p>2022 - &copy;Lauriane LAHARIE - Tous droits réservés</p>
             </footer>
         </div>
         <a href="#top"><i id="to_top" class="fa-solid fa-angles-up"></i></a>
@@ -414,6 +457,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>
 </body>
