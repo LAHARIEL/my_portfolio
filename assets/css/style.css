@@ -9,6 +9,12 @@ body {
     background-color: whitesmoke;
 }
 
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 30px;
+}
 
 h1 {
     color: blueviolet;
@@ -23,7 +29,7 @@ h1+div {
     font-size: 45px;
 }
 
-#about i{
+#about i {
     font-size: xx-large;
     color: blueviolet;
 }
@@ -62,12 +68,6 @@ h6 {
     background-color: bisque;
 }
 
-.page-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    padding: 0 30px;
-}
 
 #contact a {
     text-decoration: none;
@@ -84,7 +84,7 @@ h6 {
 footer,
 .bg-navbar {
     background: linear-gradient(#e66465, #9198e5);
-    box-shadow: 15px 15px 20px 0px rgba(180, 154, 218, 0.5);
+    box-shadow: 15px 15px 20px rgba(180, 154, 218, 0.5);
     color: white;
 }
 
@@ -173,10 +173,13 @@ a.nav-link-custom:hover {
 }
 
 
-.image {
+
+.image,
+.image-hidden {
     display: flex;
     justify-content: space-around;
 }
+
 
 .glassmorph {
     backdrop-filter: blur(5px);
@@ -224,7 +227,9 @@ a.nav-link-custom:hover {
 
 /*jusque 768px > md*/
 @media(max-width:768px) {
-    .side-nav {
+
+    .side-nav,
+    .image-hidden {
         display: none;
     }
 
@@ -255,6 +260,8 @@ a.nav-link-custom:hover {
 
 /*md*/
 @media(min-width:769px) {
+
+
     h1 {
         font-size: 50px;
     }
